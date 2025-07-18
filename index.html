@@ -5,7 +5,6 @@
   <title>Ahlam Pêcheur</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
   <style>
@@ -25,9 +24,8 @@
 
     .topbar {
       background-color: #fff;
-      padding: 10px 20px;
+      padding: 15px 30px;
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
       border-bottom: 2px solid #ddd;
@@ -39,18 +37,17 @@
     .topbar .left {
       display: flex;
       align-items: center;
-      flex-wrap: wrap;
-      gap: 10px;
     }
 
     .topbar img.logo {
-      height: 70px;
-      width: 70px;
+      height: 80px;
+      width: 80px;
+      margin-left: 15px;
       border-radius: 50%;
     }
 
     .topbar .brand-name {
-      font-size: 28px;
+      font-size: 30px;
       font-weight: bold;
       color: #0a3d62;
     }
@@ -58,7 +55,6 @@
     .social-icons {
       display: flex;
       gap: 10px;
-      margin-top: 10px;
     }
 
     .social-icons a {
@@ -72,9 +68,7 @@
     }
 
     .container {
-      padding: 30px 15px;
-      max-width: 1200px;
-      margin: 0 auto;
+      padding: 20px 10px;
     }
 
     p.intro {
@@ -97,28 +91,25 @@
     }
 
     .gallery {
-      display: flex;
-      flex-wrap: nowrap; /* ممنوع يلف الصور */
-      overflow-x: auto; /* يخلي الصور تنسحب يمين ويسار إذا ما كفت الشاشة */
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
       gap: 15px;
-      margin-top: 20px;
-      padding-bottom: 10px;
-      scroll-snap-type: x mandatory;
+      padding: 10px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
     .gallery img {
-      flex: 0 0 auto;
-      width: 250px;
+      width: 100%;
       height: auto;
-      border-radius: 15px;
-      border: 3px solid #ffd700;
-      box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
-      scroll-snap-align: start;
+      border-radius: 12px;
+      border: 2px solid #ffd700;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
     }
 
     .contact {
-      margin-top: 25px;
-      font-size: 16px;
+      margin-top: 30px;
+      font-size: 18px;
     }
 
     .contact a {
@@ -142,11 +133,12 @@
       background-color: #000;
       color: #fff;
       border: none;
-      padding: 10px 20px;
+      padding: 12px 25px;
       border-radius: 10px;
       font-size: 16px;
       cursor: pointer;
       transition: background-color 0.3s;
+      margin-top: 20px;
     }
 
     button:hover {
@@ -158,41 +150,6 @@
       color: #000;
       padding: 15px 0;
       margin-top: 40px;
-    }
-
-    @media (max-width: 768px) {
-      .topbar {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: right;
-      }
-
-      .topbar .left {
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        width: 100%;
-      }
-
-      .topbar .brand-name {
-        font-size: 22px;
-      }
-
-      .social-icons {
-        margin-top: 10px;
-        justify-content: flex-start;
-        width: 100%;
-      }
-
-      .gallery {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-
-      .gallery img {
-        width: 100%;
-        max-width: 300px;
-      }
     }
   </style>
 
@@ -207,7 +164,7 @@
   <div class="topbar">
     <div class="left">
       <img src="556.jpeg" alt="Logo" class="logo">
-      <span class="brand-name">Ahlam Pêcheur</span>
+      <span class="brand-name"> Ahlam Pêcheur</span>
     </div>
     <div class="social-icons">
       <a href="https://www.instagram.com/ahlampecheur.officiel" target="_blank" title="إنستغرام"><i class="fab fa-instagram"></i></a>
