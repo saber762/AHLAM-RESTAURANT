@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Ahlam Pêcheur</title>
+</head>
+<body>
+  <h1>مطعم Ahlam Pêcheur</h1>
+  <p>مختص في المأكولات البحرية.</p>
+  <p>رقم الهاتف: 0661698753</p>
+  <p>رقم الهاتف الثابت: 0808596429</p>
+  <p>
+    <a href="https://www.google.com/maps/place/Ahlam+Pêcheur/" target="_blank">
+      الموقع الجغرافي على الخريطة
+    </a>
+  </p>
+  <img src="restaurant.jpeg" alt="صورة المطعم" width="500">
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Ahlam Pêcheur - مأكولات بحرية</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #ffd700;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .container {
+      padding: 40px 20px;
+    }
+
+    h1 {
+      color: #ffd700;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 10px auto;
+    }
+
+    img {
+      width: 300px;
+      border-radius: 15px;
+      border: 3px solid #ffd700;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+      margin: 30px 0;
+    }
+
+    .contact {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+
+    .contact a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+
+    #map {
+      display: none;
+      margin-top: 30px;
+    }
+
+    iframe {
+      width: 90%;
+      height: 300px;
+      border: 3px solid #ffd700;
+      border-radius: 15px;
+    }
+
+    button {
+      background-color: #ffd700;
+      color: #000;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #e6c200;
+    }
+
+    .footer {
+      background-color: #111;
+      color: #ffd700;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+  </style>
+  <script>
+    function showMap() {
+      document.getElementById("map").style.display = "block";
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>⚓ مطعم Ahlam Pêcheur</h1>
+    <p>مرحبًا بكم في تجربة فاخرة من المأكولات البحرية!<br>
+    نقدم لكم ألذ وأجود الأطباق البحرية في أجواء راقية ومميزة.</p>
+
+    <img src="restaurant.jpeg" alt="صورة مطعم Ahlam Pêcheur">
+
+    <div class="contact">
+      <p>📞 الهاتف المحمول: <a href="tel:0661698753">0661698753</a></p>
+      <p>☎️ الهاتف الثابت (الفاكس): <a href="tel:0808596429">0808596429</a></p>
+    </div>
+
+    <button onclick="showMap()">📍 عرض الموقع الجغرافي للمطعم</button>
+
+    <div id="map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d796.7883504882133!2d-8.025343550227236!3d31.67508724901247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafed72b2ac5b2d%3A0x946a4a96da038b7b!2sAhlam%20P%C3%AAcheur!5e1!3m2!1sen!2sma!4v1752796621973!5m2!1sen!2sma"
+        allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2025 مطعم Ahlam Pêcheur - جميع الحقوق محفوظة
+  </div>
+</body>
+</html>
