@@ -1,8 +1,13 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <title>Ahlam Pêcheur</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ✅ Font Awesome النسخة المحدثة -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -38,20 +43,23 @@
     .topbar img.logo {
       height: 100px;
       width: 100px;
-      margin-left: 20px;
+      margin-left: 15px;
       border-radius: 50%;
     }
 
     .topbar .brand-name {
-      font-size: 40px;
+      font-size: 36px;
       font-weight: bold;
       color: #0a3d62;
     }
 
+    .social-icons {
+      display: flex;
+      gap: 12px;
+    }
+
     .social-icons a {
-      margin: 0 10px;
-      font-size: 28px;
-      text-decoration: none;
+      font-size: 26px;
       color: #0a3d62;
       transition: color 0.3s;
     }
@@ -143,8 +151,6 @@
     }
   </style>
 
-  <!-- ✅ Font Awesome for icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <script>
     function showMap() {
       document.getElementById("map").style.display = "block";
@@ -160,9 +166,9 @@
       <span class="brand-name"> Ahlam Pêcheur</span>
     </div>
     <div class="social-icons">
-      <a href="https://www.instagram.com/ahlampecheur.officiel" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.tiktok.com/@ahlampecheur" target="_blank"><i class="fab fa-tiktok"></i></a>
-      <a href="https://web.facebook.com/profile.php?id=100078226152785" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/ahlampecheur.officiel" target="_blank" title="إنستغرام"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@ahlampecheur" target="_blank" title="تيك توك"><i class="fab fa-tiktok"></i></a>
+      <a href="https://web.facebook.com/profile.php?id=100078226152785" target="_blank" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
     </div>
   </div>
 
