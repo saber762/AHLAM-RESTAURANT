@@ -18,25 +18,48 @@
       opacity: 0.98;
     }
 
+    /* ✅ شريط علوي */
+    .topbar {
+      background-color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 2px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .topbar img.logo {
+      height: 60px;
+      width: 60px;
+      margin-left: 15px;
+    }
+
+    .topbar .brand-name {
+      font-size: 26px;
+      font-weight: bold;
+      color: #0a3d62;
+    }
+
     .container {
       padding: 40px 20px;
     }
 
     h1 {
-      color: #000;
-      font-size: 3em;
-      margin-bottom: 10px;
+      display: none; /* لم نعد نحتاجه */
     }
 
     p.intro {
-      max-width: 680px; 
-      margin: 20px auto; 
-      padding: 20px; 
-      border: 2px solid #1e90ff; 
-      border-radius: 15px; 
-      background: #e6f0ff; 
-      color: #0a3d62; 
-      font-size: 18px; 
+      max-width: 680px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 2px solid #1e90ff;
+      border-radius: 15px;
+      background: #e6f0ff;
+      color: #0a3d62;
+      font-size: 18px;
       line-height: 1.6;
       font-weight: 600;
     }
@@ -114,8 +137,14 @@
   </script>
 </head>
 <body>
+
+  <!-- ✅ الشريط العلوي -->
+  <div class="topbar">
+    <img src="556.jpeg" alt="Logo" class="logo">
+    <span class="brand-name">مطعم Ahlam Pêcheur</span>
+  </div>
+
   <div class="container">
-    <h1>⚓ مطعم Ahlam Pêcheur</h1>
     <p class="intro">
       ⚓️ مطعم <strong>Ahlam Pêcheur</strong> يقدم لكم أشهى المأكولات البحرية الطازجة 🌊🐠 مع أجواء مليئة بالفرح والبهجة 😊 في قلب مدينة مراكش الساحرة.
     </p>
@@ -146,5 +175,6 @@
   <div class="footer">
     © 2025 مطعم Ahlam Pêcheur - جميع الحقوق محفوظة
   </div>
+
 </body>
 </html>
