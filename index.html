@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title> Ahlam Pêcheur</title>
+  <title>Ahlam Pêcheur</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,38 +18,50 @@
       opacity: 0.98;
     }
 
-    /* ✅ شريط علوي */
     .topbar {
       background-color: #fff;
-      padding: 20px 30px;
+      padding: 15px 30px;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       border-bottom: 2px solid #ddd;
       position: sticky;
       top: 0;
       z-index: 1000;
     }
 
+    .topbar .left {
+      display: flex;
+      align-items: center;
+    }
+
     .topbar img.logo {
       height: 80px;
       width: 80px;
-      margin-left: 20px;
+      margin-left: 15px;
       border-radius: 50%;
     }
 
     .topbar .brand-name {
-      font-size: 34px;
+      font-size: 30px;
       font-weight: bold;
       color: #0a3d62;
     }
 
-    .container {
-      padding: 40px 20px;
+    .social-icons a {
+      margin: 0 8px;
+      font-size: 24px;
+      text-decoration: none;
+      color: #0a3d62;
+      transition: color 0.3s;
     }
 
-    h1 {
-      display: none;
+    .social-icons a:hover {
+      color: #ff6600;
+    }
+
+    .container {
+      padding: 40px 20px;
     }
 
     p.intro {
@@ -129,8 +141,10 @@
       padding: 15px 0;
       margin-top: 50px;
     }
-
   </style>
+
+  <!-- ✅ Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <script>
     function showMap() {
       document.getElementById("map").style.display = "block";
@@ -141,8 +155,15 @@
 
   <!-- ✅ الشريط العلوي -->
   <div class="topbar">
-    <img src="556.jpeg" alt="Logo" class="logo">
-    <span class="brand-name"> Ahlam Pêcheur</span>
+    <div class="left">
+      <img src="556.jpeg" alt="Logo" class="logo">
+      <span class="brand-name"> Ahlam Pêcheur</span>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/ahlampecheur.officiel" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@ahlampecheur" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://web.facebook.com/profile.php?id=100078226152785" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
   </div>
 
   <div class="container">
